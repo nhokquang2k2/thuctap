@@ -1,0 +1,36 @@
+<FaceRecognitionApp>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+            BoxLayout:
+            Button:
+                text: 'Login'
+                size_hint_x: None
+                width: '100dp'
+                on_press: app.show_login_popup()
+            Button:
+                text: 'Register'
+                size_hint_x: None
+                width: '100dp'
+                on_press: app.show_register_popup()
+        Image:
+            id: image
+            size_hint: (1, None)
+            height: 480
+        Label:
+            id: result_label
+            text: "Initializing..."
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+            Button:
+                id: toggle_camera_button
+                text: 'Start Camera'
+                on_press: app.toggle_camera()
+            Button:
+                text: 'Confirm'
+                id: confirm_button
+                on_press: app.confirm_attendance()
+                disabled: True

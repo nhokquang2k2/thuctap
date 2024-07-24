@@ -1,0 +1,9 @@
+kivy
+opencv-python
+face_recognition
+numpy
+tensorflow
+imutils
+pillow
+matplotlib
+scikit-learn
