@@ -307,7 +307,7 @@ class FaceRecognitionApp(App):
             now = datetime.now()
             current_time = now.strftime("%Y-%m-%d %H:%M:%S")
             save_attendance(self.current_name, current_time)
-            self.show_notification(f"Chấm công cho {self.current_name} vào lúc {current_time}")
+            self.show_notification(f"Điểm danh cho {self.current_name} vào lúc {current_time}")
             self.current_name = ""
             self.current_label = ""
             self.start_time = None
