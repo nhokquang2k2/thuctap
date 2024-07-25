@@ -63,7 +63,7 @@ def show_attendance_records(app_instance, instance=None):
     scroll_view.add_widget(grid_layout)
     content.add_widget(scroll_view)
 
-    app_instance.attendance_records_popup = Popup(title='Lịch sử chấm công', content=content, size_hint=(0.8, 0.5))
+    app_instance.attendance_records_popup = Popup(title='Lịch sử điểm danh', content=content, size_hint=(0.8, 0.5))
     app_instance.attendance_records_popup.open()
 
 def show_manage_users_popup(app_instance, instance=None):
