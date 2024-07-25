@@ -13,7 +13,7 @@ def show_admin_dashboard(app_instance):
     app_instance.main_layout.add_widget(top_bar)
     bottom_bar = BoxLayout(size_hint_y=None, height='48dp')
     approve_users_button = Button(text='Xét duyệt users', size_hint_x=None, width='150dp', on_press=app_instance.show_approve_users_popup)
-    attendance_button = Button(text='Quản lý chấm công', size_hint_x=None, width='150dp', on_press=app_instance.show_attendance_records)
+    attendance_button = Button(text='Quản lý điểm danh', size_hint_x=None, width='150dp', on_press=app_instance.show_attendance_records)
     manage_users_button = Button(text='Quản lý users', size_hint_x=None, width='150dp', on_press=app_instance.show_manage_users_popup)
 
     bottom_bar.add_widget(approve_users_button)
